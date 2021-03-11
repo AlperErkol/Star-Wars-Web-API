@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Web API</title>
+    <link rel="stylesheet" href="references/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="head">
+            <h1>Star Wars Web API</h1>
+            <p>There are 2 javascript files in the project file.
+                <br> <u>app.js</u> is without localStorage and APIs are requesting for just one page of data.
+                <br> <u>app2.js</u> is with localStorage and APIs are requesting all pages of data.(Default)<br>
+                <u>Right click to delete row.</u></p>
+            <div class="headWrapper">
+                <div class="leftSide">
+                    <select name="datas" id="datas">
+                        <option value="-1" selected>Please Select Data!</option>
+                        <option value="People">People</option>
+                        <option value="Films">Films</option>
+                        <option value="Starships">Starships</option>
+                        <option value="Vehicles">Vehicles</option>
+                        <option value="Species">Species</option>
+                        <option value="Planets">Planets</option>
+                    </select>
+                    <button class="active" id="getData">GET DATA</button>
+                    
+                    
+                </div>
+                <div class="rightSide">
+                    <div class="h4tag">
+                        <h4 id="countOfData"></h4>
+                    </div>
+                    <button disabled class="inactive" id="addCell">ADD CELL</button>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="table">
+
+            <table id="mainTable">
+                
+                <thead id="tableHead">
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+                
+            </table>
+
+            <h2 id="warn" class="off">There is no data!</h2>
+
+
+        </div>
+        
+    </div>
+
+    
+    <!-- <script src="references/app.js"></script> -->
+    <script src="references/app2.js"></script>
+</body>
+</html>
